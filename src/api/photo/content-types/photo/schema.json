@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photos",
+  "info": {
+    "singularName": "photo",
+    "pluralName": "photos",
+    "displayName": "Photo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "year": {
+      "type": "integer",
+      "default": 1960
+    }
+  }
+}
